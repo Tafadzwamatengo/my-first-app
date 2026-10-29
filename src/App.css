@@ -1,0 +1,25 @@
+body { margin: 0; font-family: system-ui, sans-serif; background: #f5f5f7; color: #1d1d1f; }
+main { max-width: 1000px; margin: 0 auto; padding: 24px 16px; }
+h1 { text-align: center; }
+
+.filters { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; margin-bottom: 12px; }
+.filters button { padding: 6px 14px; border: 1px solid #ccc; border-radius: 999px; background: white; cursor: pointer; }
+.filters button.active { background: #1d1d1f; color: white; border-color: #1d1d1f; }
+.fav-toggle { display: block; text-align: center; margin-bottom: 8px; }
+
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 16px; }
+.card { position: relative; background: white; border-radius: 12px; padding: 16px; text-align: center; box-shadow: 0 1px 4px rgba(0,0,0,.12); }
+.card h2 { margin: 4px 0; font-size: 1.1rem; }
+.card p { margin: 8px 0 0; color: #555; font-size: .9rem; }
+.fav { position: absolute; top: 8px; right: 8px; border: none; background: none; font-size: 1.4rem; cursor: pointer; color: #e0a800; }
+
+.badge { display: inline-block; padding: 2px 10px; border-radius: 999px; font-size: .8rem; color: white; background: #888; }
+.badge[data-type="Grass"] { background: #4caf50; }
+.badge[data-type="Fire"] { background: #ef6c00; }
+.badge[data-type="Water"] { background: #2196f3; }
+.badge[data-type="Electric"] { background: #f9a825; }
+.badge[data-type="Psychic"] { background: #d81b60; }
+.badge[data-type="Ghost"] { background: #6a1b9a; }
+.badge[data-type="Dragon"] { background: #3949ab; }
+.badge[data-type="Fighting"] { background: #b71c1c; }
+.badge[data-type="Rock"] { background: #795548; }
